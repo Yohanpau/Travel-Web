@@ -1,3 +1,8 @@
 body {
 background-image: url('bg.png');
 }
+
+h1 {
+    color: brown;
+    font-size: 0.3rem;
+}
