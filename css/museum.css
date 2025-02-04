@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=Antic+Slab&family=Cantora+One&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 body {
   background-image: linear-gradient(
     to right,
@@ -9,8 +11,8 @@ body {
 }
 
 body::-webkit-scrollbar {
-    display: none; 
-  }
+  display: none;
+}
 
 .navbar {
   position: fixed;
@@ -46,8 +48,8 @@ body::-webkit-scrollbar {
 }
 
 .adventHeading {
-  background-image: url("public/2\ 1.png");
-  background-size: 70%;
+  background-image: url("../assets/41.png");
+  background-size: 55%;
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-clip: text;
@@ -168,6 +170,15 @@ body::-webkit-scrollbar {
   }
 }
 
+@keyframes fadeOutContent {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .modal-image {
   width: 50%;
   height: auto;
@@ -180,12 +191,12 @@ body::-webkit-scrollbar {
 }
 
 .modal-description h2 {
-  font-family: "Bebas Neue";
+  font-family: "Antic Didone";
   text-align: center;
 }
 
 .modal-description p {
-  font-family: "Inter";
+  font-family: "Antic Slab";
 }
 
 .close {
@@ -217,9 +228,6 @@ body::-webkit-scrollbar {
 }
 
 .footer img {
-    width: 1463px;
-    height: 284px;
-  }
-  
-  
-  
+  width: 1463px;
+  height: 284px;
+}
