@@ -1,74 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <title>Travel Web</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    
-</head>
-<body>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <ul><a href="#discover">DISCOVER</a></ul>
-        <ul><a href="#about">ABOUT</a></ul>
-        <ul><a href="#contact">CONTACT US</a></ul>
-        <ul><a href="#destination">DESTINATION</a></ul>
+      <ul>
+        <a href="#discover">DISCOVER</a>
+      </ul>
+      <ul>
+        <a href="#about">ABOUT</a>
+      </ul>
+      <ul>
+        <a href="#contact">CONTACT US</a>
+      </ul>
+      <ul>
+        <a href="#destination">DESTINATION</a>
+      </ul>
     </nav>
-    
-    <img src="./assets/title@2x.png" alt="Tagline Image" class="tagline-image">
+
+    <img src="./assets/title@2x.png" alt="Tagline Image" class="headerTitle" id="discover"/>
 
     <section class="img-container">
-        <div class="container">
-            <div class="panel active" style="background-image: url(img1.png);">
-                 <h1>Boracay</h1>
-            </div>
-            <div class="panel" style="background-image: url(img2.png);">
-                 <h1>Coron</h1>
-            </div>
-            <div class="panel" style="background-image: url(img3.png);">
-                <h1>The Ruins</h1>
-           </div>
-           <div class="panel" style="background-image: url(img4.png);">
-                 <h1>Intramuros</h1>
-            </div>
-            <div class="panel" style="background-image: url(img5.png);">
-                <h1>Siargao</h1>
-           </div>
-           <div class="panel" style="background-image: url(img6.png);">
-                 <h1>Paragliding</h1>
-                 <h2>Montalban, Rizal</h2>
-            </div>
-            <div class="panel" style="background-image: url(img7.png);">
-                <h1>Caza Peregrine</h1>
-                <h2>San Mateo, Rizal</h2>
-           </div>
-           <div class="panel" style="background-image: url(img8.png);">
-                 <h1>Mt. Nagpatong</h1>
-                 <h2>Tanay, Rizal</h2>
-            </div>
+      <div class="container">
+        <div class="panel active" style="background-image: url(img1.png)">
+          <h1>Boracay</h1>
         </div>
+        <div class="panel" style="background-image: url(img2.png)">
+          <h1>Coron</h1>
+        </div>
+        <div class="panel" style="background-image: url(img3.png)">
+          <h1>The Ruins</h1>
+        </div>
+        <div class="panel" style="background-image: url(img4.png)">
+          <h1>Intramuros</h1>
+        </div>
+        <div class="panel" style="background-image: url(img5.png)">
+          <h1>Siargao</h1>
+        </div>
+        <div class="panel" style="background-image: url(img6.png)">
+          <h1>Paragliding</h1>
+          <h2>Montalban, Rizal</h2>
+        </div>
+        <div class="panel" style="background-image: url(img7.png)">
+          <h1>Caza Peregrine</h1>
+          <h2>San Mateo, Rizal</h2>
+        </div>
+        <div class="panel" style="background-image: url(img8.png)">
+          <h1>Mt. Nagpatong</h1>
+          <h2>Tanay, Rizal</h2>
+        </div>
+      </div>
     </section>
-    <script src="script.js"></script>
 
+    <section id="footer" class="footer">
+       <div class="about" id="about">
+        <img
+          src="./assets/phil.png"
+          alt="Tagline Image"
+          class="phil_img"
+        />
+        <h3>About</h3>
+        <p>
+          The Philippines, an archipelago of over 7,000 breathtaking islands, is
+          a tropical paradise like no other. From pristine white sand beaches
+          and crystal-clear turquoise waters to lush mountains and vibrant coral
+          reefs, it offers an unmatched haven for adventurers and nature lovers.
+          Immerse yourself in its rich culture, warm hospitality, and
+          unforgettable experiences—discover why this slice of paradise should
+          be your next dream destination!
+        </p>
+        <button
+        class="learn-more-btn"
+        onclick="window.location.href='https://www.example.com';"
+      >
+        Learn More
+      </button>
+      </div>
 
+      <div class="destination_footer" id="destination">
+        <div class="destination_container">
+          <nav>
+            <div class="icon-item">
+              <p>Adventures</p>
+              <a href="/pages/adventure.html" class="icon-link" title="Adventures">
+                <i class="fa-solid fa-sailboat"></i>
+              </a>
+            </div>
+            <div class="icon-item">
+              <p>Beaches</p>
+              <a href="/pages/beaches.html" class="icon-link" title="Beaches">
+                <i class="fa-solid fa-umbrella-beach"></i>
+              </a>
+            </div>
+            <div class="icon-item">
+              <p>Museum</p>
+              <a href="/pages/museum.html" class="icon-link" title="Museum">
+                <i class="fa-solid fa-building-columns"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
 
-    <section id="about" class="about">
-        <div>
-            <img src="./assets/phil.png" alt="Tagline Image" class="tagline-image"> 
-            <h3>About</h3>
-            <p>The Philippines, an archipelago of over 7,000 breathtaking islands, is a tropical paradise like no other. From pristine white sand beaches and crystal-clear turquoise waters to lush mountains and vibrant coral reefs, it offers an unmatched haven for adventurers and nature lovers. Immerse yourself in its rich culture, warm hospitality, and unforgettable experiences—discover why this slice of paradise should be your next dream destination!</p>
-          </div>
-          
-          <button class="learn-more-btn" onclick="window.location.href='https://www.example.com';">Learn More</button>         
+      <div class="visit-now">VISIT NOW!</div>
     </section>
-    <img src="./assets/footer.png" alt="Tagline Image" class="tagline-image">  
-    <div class="footer">
-        <div class="partofFooter"></div>
-    <img src="./assets/footerrectangle.png" alt="Tagline Image" class="footer-image">
-</div>
     <script src="./js/script.js"></script>
-</body>
+  </body>
 </html>

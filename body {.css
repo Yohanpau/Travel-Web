@@ -5,52 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Philippines Travel</title>
     <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(173.13deg, #000000 5.68%, #17B16F 94.24%);
-            color: white;
-            text-align: center;
-        }
-
-        .container {
-            position: relative;
-            width: 100%;
-            max-width: 1200px;
-            margin: auto;
-            padding: 50px 20px;
-        }
-
-        .map {
-            position: absolute;
-            left: 20px;
-            top: 50px;
-            width: 200px;
-        }
-
-        .about-section {
-            padding-left: 250px;
-        }
-
-        h3 {
-            font-size: 36px;
-            font-weight: bold;
-        }
-
-        p {
-            font-size: 18px;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .learn-more-btn {
-            background-color: black;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-        }
 
         .destination-footer {
             background: url('footer-bg.jpg') no-repeat center;
@@ -73,14 +27,6 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="image.png" alt="Philippines Map" class="map">
-        <div class="about-section">
-            <h3>ABOUT</h3>
-            <p>The Philippines, an archipelago of over 7,000 breathtaking islands, is a tropical paradise like no other. From pristine white sand beaches and crystal-clear turquoise waters to lush mountains and vibrant coral reefs, it offers an unmatched haven for adventurers and nature lovers. Immerse yourself in its rich culture, warm hospitality, and unforgettable experiences—discover why this slice of paradise should be your next dream destination!</p>
-            <button class="learn-more-btn">LEARN MORE</button>
-        </div>
-    </div>
 
     <div class="destination-footer">
         <div class="icons">
