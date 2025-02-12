@@ -1,0 +1,114 @@
+.visit {
+  background: url("../assets/bg.png") no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 20px 50px 0px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  border: 1px solid black;
+}
+
+.visit_container {
+  background: rgb(21, 21, 21);
+  padding-top: 30px;
+  width: 1140px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 120px;
+}
+
+.visit-content {
+    margin-right: 30px;
+}
+
+.visit-content h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: rgb(210, 204, 204)
+}
+.visit-content p {
+  width: 190px;
+  margin: auto;
+  padding: 7px;
+  color: rgb(210, 204, 204)
+}
+.visit-content ul {
+  text-align: center;
+}
+.list {
+  padding: 7px;
+}
+.list li {
+  width: auto;
+  text-align: center;
+  list-style-type: none;
+  padding: 7px;
+  position: relative;
+}
+.list li a {
+    color: rgb(210, 204, 204);
+  text-decoration: none;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.list li::before {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background: #17b16f;
+  transition-duration: 0.5s;
+}
+.list li:hover::before {
+  width: 70px;
+}
+.visit-icons {
+  text-align: left;
+  padding: 0;
+}
+.visit-icons li {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+}
+.visit-icons i {
+  color: rgb(222, 222, 222);
+  font-size: 30px;
+}
+.visit-icons a {
+  text-decoration: none;
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(210, 204, 204);
+}
+.visit-icons a:hover {
+  color: #cecece;
+}
+.visit-icons i:hover {
+  color: #13925b;
+}
+.bottom-bar {
+  background: #13a264;
+  text-align: center;
+  padding: 10px 0;
+  width: 90.2%;
+  align-self: center;
+}
+.bottom-bar p {
+  color: black;
+  margin: 0;
+  font-size: 14px;
+  padding: 7px;
+  align-self: center;
+}
