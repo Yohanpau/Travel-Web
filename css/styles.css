@@ -1,9 +1,5 @@
 html,
 body {
-  background-image: url("../assets/bg.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   padding-top: 60px;
   margin: 0;
   padding: 0;
@@ -49,6 +45,36 @@ body::-webkit-scrollbar {
 .navbar a:hover {
   color: #ffd700;
 }
+.homebg {
+  display: flex;
+  height: 50vw;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  top: 0; 
+  left: 0;
+  z-index: -1;
+}
+
+.homebg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
 
 .headerTitle {
   width: auto;
@@ -57,16 +83,17 @@ body::-webkit-scrollbar {
   margin: 20px auto 0;
 }
 
-/* PLACES SECTION  DITO KAEDIT ANGEL*/
 .img-container {
   width: 100%;
   height: 100vh;
-  background-image: url("bg.jpg");
+  background-image: url("bg.png"); /* Default background */
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-image 1s ease-in-out; /* Smooth transition for background */
 }
 
 .container {
@@ -89,29 +116,34 @@ body::-webkit-scrollbar {
   position: relative;
   transition: all 700ms ease-in;
 }
+
 .panel h1 {
   font-size: 30px;
   position: absolute;
-  bottom: 20px;
+  top: 10px;
   left: 20px;
   margin: 0;
   opacity: 0;
 }
+
 .panel h2 {
   font-size: 30px;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
   margin: 0;
   opacity: 0;
 }
+
 .panel.active {
   flex: 5;
 }
+
 .panel.active h1 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
+
 .panel.active h2 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;

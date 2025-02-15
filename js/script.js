@@ -1,25 +1,3 @@
-var modal = document.getElementById("myModal");
-
-var img = document.querySelector(".clickable-image");
-var modalImg = document.querySelector(".modal-image");
-var captionText = document.querySelector(".modal-description");
-
-img.onclick = function() {
-    modal.style.display = "block";
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
 const panels = document.querySelectorAll(".panel");
 
@@ -34,4 +12,24 @@ function removeActiveClasses() {
     panels.forEach((panel) => {
         panel.classList.remove("active");
     });
+}
+
+const imgContainer = document.querySelector('.img-container');
+
+function updateBackgroundImage(panel) {
+  const backgroundImage = panel.style.backgroundImage; 
+  imgContainer.style.backgroundImage = backgroundImage; 
+}
+
+panels.forEach((panel) => {
+  panel.addEventListener('click', () => {
+    panels.forEach((p) => p.classList.remove('active'));
+    panel.classList.add('active');
+    updateBackgroundImage(panel);
+  });
+});
+
+const initialActivePanel = document.querySelector('.panel.active');
+if (initialActivePanel) {
+  updateBackgroundImage(initialActivePanel);
 }

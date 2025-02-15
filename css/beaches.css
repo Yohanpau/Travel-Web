@@ -19,13 +19,14 @@ body::-webkit-scrollbar {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1120px;
+  width: 35%; 
+  max-width: 1120px;
   background: var(--light-black-shadow, #00000040);
   color: white;
   z-index: 1000;
-  padding: 10px 0;
+  padding: 10px 20px; 
   display: flex;
-  justify-content: center;
+  justify-content: space-between; 
   align-items: center;
   font-family: "Saira Condensed";
 }
@@ -33,7 +34,7 @@ body::-webkit-scrollbar {
 .navbar ul {
   list-style: none;
   padding: 0;
-  margin: 0 15px;
+  margin: 0; /* Remove horizontal margin */
 }
 
 .navbar a {
@@ -46,6 +47,7 @@ body::-webkit-scrollbar {
 .navbar a:hover {
   color: #ffd700;
 }
+
 
 .adventHeading {
   background-image: url("../assets/31.png");

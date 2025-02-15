@@ -1,5 +1,5 @@
 .visit {
-  background: url("../assets/bg.png") no-repeat center center fixed;
+  background: url("../assets/bg.png") no-repeat bottom center;
   background-size: cover;
   margin: 0;
   height: 60vh;
@@ -11,13 +11,12 @@
   color: white;
   font-family: Arial, sans-serif;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-  border: 1px solid black;
 }
 
 .visit_container {
   background: rgb(21, 21, 21);
   padding-top: 30px;
-  width: 1140px;
+  width: 90%;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
