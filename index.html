@@ -9,7 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Travel Web</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -30,15 +37,45 @@
     </nav>
 
     <div class="homebg" id="home">
-      <img src="./assets/bg.png" alt="background-image" class="homebg-img" />
+      <!-- Video as background -->
+      <video autoplay loop muted class="homebg-video">
+        <source src="assets/bgvid.mp4" type="video/mp4" />
+      </video>
+      <!-- Credits Overlay (hidden by default) -->
+      <div class="video-credits">
+        <p>
+          Credits to:
+          <a
+            href="https://www.youtube.com/watch?v=K2Cjf8gHH3Y&t=1s"
+            target="_blank"
+            >Tourism Philippines</a
+          >
+        </p>
+      </div>
       <div class="home-content">
-        <img src="./assets/title@2x.png" alt="Tagline Image" class="headerTitle" />
+        <img
+          src="./assets/title@2x.png"
+          alt="Tagline Image"
+          class="headerTitle"
+        />
+      </div>
+
+      <!-- Scroll Down Icon -->
+      <div class="scroll-down">
+        <h1>
+          Scroll Down For More!<i style="font-size: 24px" class="far"
+            >&#xf0a7;</i
+          >
+        </h1>
       </div>
     </div>
 
     <section class="img-container" id="discover">
       <div class="container">
-        <div class="panel active" style="background-image: url(/assets/img1.png)">
+        <div
+          class="panel active"
+          style="background-image: url(/assets/img1.png)"
+        >
           <h1>Boracay</h1>
         </div>
         <div class="panel" style="background-image: url(/assets/img2.png)">
@@ -69,12 +106,8 @@
     </section>
 
     <section id="footer" class="footer">
-       <div class="about" id="about">
-        <img
-          src="./assets/phil.png"
-          alt="Tagline Image"
-          class="phil_img"
-        />
+      <div class="about" id="about">
+        <img src="./assets/phil.png" alt="Tagline Image" class="phil_img" />
         <h3>About</h3>
         <p>
           The Philippines, an archipelago of over 7,000 breathtaking islands, is
@@ -86,11 +119,11 @@
           be your next dream destination!
         </p>
         <button
-        class="learn-more-btn"
-        onclick="window.location.href='https://www.example.com';"
-      >
-        Learn More
-      </button>
+          class="learn-more-btn"
+          onclick="window.location.href='https://www.example.com';"
+        >
+          Learn More
+        </button>
       </div>
 
       <div class="destination_footer" id="destination">
@@ -98,7 +131,11 @@
           <nav>
             <div class="icon-item">
               <p>Adventures</p>
-              <a href="/pages/adventure.html" class="icon-link" title="Adventures">
+              <a
+                href="/pages/adventure.html"
+                class="icon-link"
+                title="Adventures"
+              >
                 <i class="fa-solid fa-sailboat"></i>
               </a>
             </div>

@@ -33,3 +33,15 @@ const initialActivePanel = document.querySelector('.panel.active');
 if (initialActivePanel) {
   updateBackgroundImage(initialActivePanel);
 }
+
+// Detect scroll event
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  
+  // When the page is scrolled down by 50px or more, add the 'scrolled' class
+  if (window.scrollY > 600) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});

@@ -26,7 +26,9 @@
             <p>123-456-890</p>
           </ul>
         </div>
-        <div class="visit-content">
+        
+        <!-- Quick Links Section -->
+        <div class="visit-content" id="quick-links">
           <h3>Quick links</h3>
           <ul class="list">
             <li><a href="../index.html#home">Home</a></li>
@@ -35,6 +37,7 @@
             <li><a href="../index.html#destination">Destination</a></li>
           </ul>
         </div>
+        
         <div class="visit-content">
           <h3>Follow Us</h3>
           <ul class="visit-icons">
@@ -54,5 +57,11 @@
       </div>
     </div>
     <script src="../js/visit.js"></script>
+    <script>
+      // Hide the Quick Links section on index.html
+      if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+        document.getElementById("quick-links").style.display = "none";
+      }
+    </script>
   </body>
 </html>
