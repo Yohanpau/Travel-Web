@@ -1,3 +1,8 @@
+function toggleMenu() {
+  const menu = document.querySelector('.menu');
+  menu.classList.toggle('active');
+}
+
 
 const panels = document.querySelectorAll(".panel");
 

@@ -231,5 +231,45 @@ body::-webkit-scrollbar {
     height: 284px;
   }
   
-  
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .navbar {
+    width: 70%; 
+    padding: 10px; 
+  }
+
+  .navbar a {
+    font-size: 14px; 
+  }
+
+  .adventHeading {
+    font-size: 60px; 
+    padding: 10px; 
+    margin-top: 30px;
+  }
+
+  .container {
+    width: 300px;
+    height: auto;
+  }
+
+  .places_left,
+  .places_right {
+    width: 90%; 
+    height: auto;
+    margin-bottom: 15px; 
+  }
+
+  .modal {
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+  }
+
+  .modal-content {
+    width: 95%;
+    margin: 5% auto; 
+  }
+}
   

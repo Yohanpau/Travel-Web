@@ -5,6 +5,7 @@ body {
   width: 100%;
   height: 100vh;
   overflow: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
   background: linear-gradient(
     173.13deg,
@@ -27,38 +28,109 @@ body::-webkit-scrollbar {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 1120px;
+  width: 70%; /* Use full width on mobile */
   backdrop-filter: blur(10px);
   color: white;
   z-index: 1000;
   padding: 10px 0;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Use space between for mobile */
   align-items: center;
   font-family: "Saira Condensed", sans-serif;
 }
 
+/* Navbar Scrolled Style */
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.4); /* Solid semi-transparent background when scrolled */
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background when scrolled */
   backdrop-filter: none; /* Remove blur when scrolled */
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
+/* Navbar Menu (for mobile) */
 .navbar ul {
   list-style: none;
   padding: 0;
-  margin: 0 15px;
+  margin: 0;
+  display: flex;
+  gap: 15px;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
 }
 
 .navbar a:hover {
   color: #ffd700;
+}
+
+/* Hamburger Menu (for mobile) */
+.navbar .hamburger {
+  display: none; /* Hide hamburger menu by default */
+  flex-direction: column;
+  position: flex-end;
+  gap: 4px;
+}
+
+.navbar .hamburger div {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+/* Mobile Menu Style */
+.navbar .menu {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .menu.active {
+  display: block; /* Show menu when active */
+  position: absolute;
+  top: 60px; /* Position below navbar */
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8); /* Background for the mobile menu */
+  width: 70%;
+  text-align: center;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  /* Mobile specific styles */
+  .navbar {
+    padding: 10px;
+    justify-content: space-between;
+    display: column;
+    justify-content: flex-end;
+  }
+
+  .navbar ul {
+    display: none; /* Hide regular navbar items on mobile */
+  }
+
+  .navbar .hamburger {
+    display: flex; /* Show hamburger on mobile */
+  }
+
+  .navbar .menu {
+    display: none; /* Menu is hidden by default */
+    width: 100%;
+    padding-top: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar .menu.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .navbar a {
+    font-size: 18px; /* Adjust text size for mobile */
+  }
 }
 
 /* Background Video Styles */
@@ -68,10 +140,11 @@ body::-webkit-scrollbar {
   width: 100%;
   align-items: center;
   justify-content: center;
-  position: relative; 
-  top: 0; 
+  position: relative;
+  top: 0;
   left: 0;
   overflow: hidden;
+  object-fit: cover;
 }
 
 .homebg-video {
@@ -114,7 +187,7 @@ body::-webkit-scrollbar {
 }
 
 .homebg:hover .video-credits {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .headerTitle {
@@ -127,14 +200,14 @@ body::-webkit-scrollbar {
 /* Scroll Icon Styles */
 .scroll-down {
   position: absolute;
-  bottom: 30px; 
+  bottom: 30px;
   left: 41%;
   transform: translateX(-50%);
-  animation: bounce 2s infinite; 
+  animation: bounce 2s infinite;
   z-index: 2;
-  font-family: 'Saira Condensed';
-  display: flex; 
-  justify-content: center; 
+  font-family: "Saira Condensed";
+  display: flex;
+  justify-content: center;
   color: white;
 }
 
@@ -147,14 +220,14 @@ body::-webkit-scrollbar {
 
 /* Optional: Animation */
 @keyframes bounce {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-10px);
   }
 }
-
 
 .img-container {
   width: 100%;
@@ -253,7 +326,7 @@ body::-webkit-scrollbar {
 }
 
 .about h3 {
-  font-family: 'Antonio', sans-serif;
+  font-family: "Antonio", sans-serif;
   font-size: 36px;
   font-weight: 300;
   line-height: 46.58px;
@@ -263,31 +336,12 @@ body::-webkit-scrollbar {
 }
 
 .about p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 16.5px;
+  line-height: 1.5;
   width: 780px;
-  margin: 20px auto;
+  margin: 10px auto;
   color: #fff;
   margin-right: 15px;
-}
-
-.about .learn-more-btn {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background-color: black; /* Changed to black */
-  color: white; /* White text */
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.about .learn-more-btn:hover {
-  background-color: #333; /* Darker shade for hover effect */
 }
 
 /* FOOTER */
@@ -296,7 +350,7 @@ body::-webkit-scrollbar {
   width: 100%;
   height: 100vh;
   margin-bottom: -20px;
-} 
+}
 
 .destination_footer {
   background-image: url("/assets/bg.png");
@@ -314,11 +368,11 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: center;
   align-items: flex-start; /* This ensures content starts at the top */
-  width: 85%; 
+  width: 85%;
   height: 90%;
   margin: 0 auto;
   padding: 20px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .destination_container nav {
@@ -326,7 +380,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 300px;
+  gap: 35px;
 }
 
 .icon-item {
@@ -338,7 +392,7 @@ body::-webkit-scrollbar {
 
 .icon-item p {
   font-family: "Saira Condensed";
-  font-size: 20px;
+  font-size: 27px;
   color: white;
   margin: 0;
   font-weight: 800;
@@ -356,12 +410,114 @@ body::-webkit-scrollbar {
   border-radius: 50%;
 }
 
-.icon-item i {
-  font-size: 30px;
+.icon-item img {
+  width: 350px; /* Adjust the width as needed */
+  height: 450px;
   color: #efefee;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  border-radius: 20px;
 }
 
-.icon-item i:hover {
-  transform: scale(1.2);
+.icon-item img:hover {
+  transform: scale(1.1); /* Slightly enlarge the image */
+  filter: brightness(1.2); /* Optional: Brighten the image on hover */
+}
+
+/* HOME MOBILE */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Smaller font size for mobile */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    width: 100%;
+  }
+
+  .homebg {
+    display: flex;
+    height: 100%; /* Ensure the container has a minimum height */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .homebg-video {
+    width: 100%;
+    height: 100%; /* Make sure the video fills the container */
+    object-fit: cover; /* Ensures the video covers the container without distorting */
+  }
+
+  /* Content Styles */
+.home-content img{
+  width: 100%;
+  height: auto;
+}
+
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: auto;
+  text-align: center;
+}
+
+.video-credits {
+  font-size: 14px;
+}
+
+}
+
+/* DISCOVER MOBILE (ANGEL SAYO 2*/
+
+/* ABOUT MOBILE (PATI I2 ANGEL)*/
+
+/* DESTINATION MOBILE */
+@media (max-width: 768px) {
+  .destination_container {
+    width: 90%; /* Increase the container width */
+    height: auto; /* Let the height be dynamic */
+    padding: 10px; /* Reduced padding */
+    margin-bottom: 10px;
+  }
+
+  .destination_container nav {
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Reduced gap between items */
+  }
+
+  .icon-item img {
+    width: 80px; /* Smaller image size */
+    height: 80px; /* Maintain aspect ratio */
+  }
+
+  .icon-item p {
+    font-size: 22px; /* Slightly smaller text */
+  }
+
+  .footer {
+    height: auto; /* Let the footer height be dynamic */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-item img {
+    width: 60px; /* Even smaller image size on very small screens */
+    height: 60px;
+  }
+
+  .icon-item p {
+    font-size: 18px; /* Smaller text on very small screens */
+  }
+
+  .destination_footer {
+    padding-top: 10px; /* Reduce top padding */
+  }
+
+  .destination_container {
+    width: 95%; /* Increase container width on very small screens */
+  }
 }
