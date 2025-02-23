@@ -28,25 +28,25 @@ body::-webkit-scrollbar {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%; /* Use full width on mobile */
+  width: 70%; 
   backdrop-filter: blur(10px);
   color: white;
   z-index: 1000;
   padding: 10px 0;
   display: flex;
-  justify-content: center; /* Use space between for mobile */
+  justify-content: center; 
   align-items: center;
   font-family: "Saira Condensed", sans-serif;
 }
 
 /* Navbar Scrolled Style */
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background when scrolled */
-  backdrop-filter: none; /* Remove blur when scrolled */
+  background: rgba(0, 0, 0, 0.4); 
+  backdrop-filter: none; 
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
 
-/* Navbar Menu (for mobile) */
+
 .navbar ul {
   list-style: none;
   padding: 0;
@@ -66,9 +66,8 @@ body::-webkit-scrollbar {
   color: #ffd700;
 }
 
-/* Hamburger Menu (for mobile) */
 .navbar .hamburger {
-  display: none; /* Hide hamburger menu by default */
+  display: none; 
   flex-direction: column;
   position: flex-end;
   gap: 4px;
@@ -88,11 +87,11 @@ body::-webkit-scrollbar {
 }
 
 .navbar .menu.active {
-  display: block; /* Show menu when active */
+  display: block; 
   position: absolute;
-  top: 60px; /* Position below navbar */
+  top: 60px; 
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8); /* Background for the mobile menu */
+  background-color: rgba(0, 0, 0, 0.8); 
   width: 70%;
   text-align: center;
   padding: 10px 0;
@@ -100,7 +99,7 @@ body::-webkit-scrollbar {
 }
 
 @media (max-width: 768px) {
-  /* Mobile specific styles */
+  
   .navbar {
     padding: 10px;
     justify-content: space-between;
@@ -109,15 +108,15 @@ body::-webkit-scrollbar {
   }
 
   .navbar ul {
-    display: none; /* Hide regular navbar items on mobile */
+    display: none; 
   }
 
   .navbar .hamburger {
-    display: flex; /* Show hamburger on mobile */
+    display: flex; 
   }
 
   .navbar .menu {
-    display: none; /* Menu is hidden by default */
+    display: none; 
     width: 100%;
     padding-top: 20px;
     gap: 15px;
@@ -125,18 +124,18 @@ body::-webkit-scrollbar {
   }
 
   .navbar .menu.active {
-    display: flex; /* Show the menu when active */
+    display: flex; 
   }
 
   .navbar a {
-    font-size: 18px; /* Adjust text size for mobile */
+    font-size: 18px; 
   }
 }
 
 /* Background Video Styles */
 .homebg {
   display: flex;
-  height: 100vh; /* Full screen height */
+  height: 100vh; 
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -167,22 +166,22 @@ body::-webkit-scrollbar {
   z-index: 1;
 }
 
-/* Credits Overlay (hidden by default) */
+
 .video-credits {
   position: absolute;
-  bottom: 20px; /* Adjust to position it at the bottom of the video */
+  bottom: 20px; 
   left: 50%;
   transform: translateX(-50%);
   color: white;
   font-size: 16px;
   z-index: 10;
-  opacity: 0; /* Make the credits hidden by default */
-  transition: opacity 0.3s ease; /* Smooth transition effect */
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
   text-align: center;
 }
 
 .video-credits a {
-  color: #ffd700; /* Gold color for the link */
+  color: #ffd700; 
   text-decoration: none;
 }
 
@@ -215,7 +214,7 @@ body::-webkit-scrollbar {
 .scroll-icon-h1 {
   width: 50px;
   height: 50px;
-  display: block; /* Ensure the image is treated as a block element */
+  display: block; 
 }
 
 /* Optional: Animation */
@@ -232,14 +231,14 @@ body::-webkit-scrollbar {
 .img-container {
   width: 100%;
   height: 100vh;
-  background-image: url("bg.png"); /* Default background */
+  background-image: url("bg.png"); 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-image 1s ease-in-out; /* Smooth transition for background */
+  transition: background-image 1s ease-in-out; 
 }
 
 .container {
@@ -367,7 +366,7 @@ body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
-  align-items: flex-start; /* This ensures content starts at the top */
+  align-items: flex-start; 
   width: 85%;
   height: 90%;
   margin: 0 auto;
@@ -399,7 +398,7 @@ body::-webkit-scrollbar {
 }
 
 .icon-link {
-  font-size: 1.5rem; /* Icon size */
+  font-size: 1.5rem; 
   text-decoration: none;
   color: white;
   transition: background 0.3s ease;
@@ -411,7 +410,7 @@ body::-webkit-scrollbar {
 }
 
 .icon-item img {
-  width: 350px; /* Adjust the width as needed */
+  width: 350px; 
   height: 450px;
   color: #efefee;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -419,23 +418,23 @@ body::-webkit-scrollbar {
 }
 
 .icon-item img:hover {
-  transform: scale(1.1); /* Slightly enlarge the image */
-  filter: brightness(1.2); /* Optional: Brighten the image on hover */
+  transform: scale(1.1); 
+  filter: brightness(1.2); 
 }
 
 /* HOME MOBILE */
 @media (max-width: 768px) {
   body {
-    font-size: 14px; /* Smaller font size for mobile */
+    font-size: 14px; 
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; 
     width: 100%;
   }
 
   .homebg {
     display: flex;
-    height: 100%; /* Ensure the container has a minimum height */
+    height: 100%; 
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -446,8 +445,8 @@ body::-webkit-scrollbar {
 
   .homebg-video {
     width: 100%;
-    height: 100%; /* Make sure the video fills the container */
-    object-fit: cover; /* Ensures the video covers the container without distorting */
+    height: 100%; 
+    object-fit: cover; 
   }
 
   /* Content Styles */
@@ -478,46 +477,46 @@ body::-webkit-scrollbar {
 /* DESTINATION MOBILE */
 @media (max-width: 768px) {
   .destination_container {
-    width: 90%; /* Increase the container width */
-    height: auto; /* Let the height be dynamic */
-    padding: 10px; /* Reduced padding */
+    width: 90%; 
+    height: auto; 
+    padding: 10px;
     margin-bottom: 10px;
   }
 
   .destination_container nav {
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Reduced gap between items */
+    flex-direction: column; 
+    gap: 20px; 
   }
 
   .icon-item img {
-    width: 80px; /* Smaller image size */
-    height: 80px; /* Maintain aspect ratio */
+    width: 80px; 
+    height: 80px; 
   }
 
   .icon-item p {
-    font-size: 22px; /* Slightly smaller text */
+    font-size: 22px; 
   }
 
   .footer {
-    height: auto; /* Let the footer height be dynamic */
+    height: auto; 
   }
 }
 
 @media (max-width: 480px) {
   .icon-item img {
-    width: 60px; /* Even smaller image size on very small screens */
+    width: 60px; 
     height: 60px;
   }
 
   .icon-item p {
-    font-size: 18px; /* Smaller text on very small screens */
+    font-size: 18px; 
   }
 
   .destination_footer {
-    padding-top: 10px; /* Reduce top padding */
+    padding-top: 10px; 
   }
 
   .destination_container {
-    width: 95%; /* Increase container width on very small screens */
+    width: 95%; 
   }
 }
