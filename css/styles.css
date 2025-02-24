@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  overflow: scroll;
+  overflow: auto;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background: linear-gradient(
@@ -98,13 +98,22 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   
   .navbar {
-    padding: 10px;
-    justify-content: space-between;
-    display: column;
-    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%; 
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: "Saira Condensed", sans-serif;
   }
 
   .navbar ul {
@@ -125,10 +134,11 @@ body::-webkit-scrollbar {
 
   .navbar .menu.active {
     display: flex; 
+    width: 280px;
   }
 
   .navbar a {
-    font-size: 18px; 
+    font-size: 14px; 
   }
 }
 
@@ -307,7 +317,6 @@ body::-webkit-scrollbar {
     #17b16f 94.24%
   );
   color: white;
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 20px 0;
   display: flex;
@@ -325,9 +334,9 @@ body::-webkit-scrollbar {
 }
 
 .about h3 {
-  font-family: "Antonio", sans-serif;
+  font-family: "Saira Condensed", sans-serif;
   font-size: 36px;
-  font-weight: 300;
+  font-weight: 600;
   line-height: 46.58px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -336,11 +345,13 @@ body::-webkit-scrollbar {
 
 .about p {
   font-size: 16.5px;
-  line-height: 1.5;
+  font-family: "Antonio";
+  line-height: 2;
   width: 780px;
   margin: 10px auto;
   color: #fff;
-  margin-right: 15px;
+  margin-right: 35px;
+  text-align: right;
 }
 
 /* FOOTER */
@@ -423,13 +434,25 @@ body::-webkit-scrollbar {
 }
 
 /* HOME MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   body {
     font-size: 14px; 
     margin: 0;
     padding: 0;
     overflow-x: hidden; 
-    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    backdrop-filter: blur(10px);
+    color: white;
+    z-index: 1000;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-family: "Saira Condensed", sans-serif; width: 100%;
   }
 
   .homebg {
@@ -471,11 +494,62 @@ body::-webkit-scrollbar {
 }
 
 /* DISCOVER MOBILE (ANGEL SAYO 2*/
+@media (max-width: 360px) {
+  .panel h1 {
+    font-size: 14px;
+  }
+  .panel h2 {
+    font-size: 14px;
+  }
+}
 
 /* ABOUT MOBILE (PATI I2 ANGEL)*/
 
+@media (max-width: 360px) {
+  .about {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .about h3 {
+    font-size: 28px;
+    margin: 10px 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .about p {
+    font-size: 14px;
+    line-height: 1.6;
+    width: 90%;
+    margin: 10px auto;
+    padding: 0 10px;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+  }
+
+  .about .phil_img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.5; 
+  }
+}
+
 /* DESTINATION MOBILE */
-@media (max-width: 768px) {
+@media (max-width: 360px) {
   .destination_container {
     width: 90%; 
     height: auto; 
