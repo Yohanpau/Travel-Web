@@ -28,24 +28,23 @@ body::-webkit-scrollbar {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%; 
+  width: 70%;
   backdrop-filter: blur(10px);
   color: white;
   z-index: 1000;
   padding: 10px 0;
   display: flex;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   font-family: "Saira Condensed", sans-serif;
 }
 
 /* Navbar Scrolled Style */
 .navbar.scrolled {
-  background: rgba(0, 0, 0, 0.4); 
-  backdrop-filter: none; 
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: none;
   transition: background 0.3s ease, backdrop-filter 0.3s ease;
 }
-
 
 .navbar ul {
   list-style: none;
@@ -67,7 +66,7 @@ body::-webkit-scrollbar {
 }
 
 .navbar .hamburger {
-  display: none; 
+  display: none;
   flex-direction: column;
   position: flex-end;
   gap: 4px;
@@ -87,66 +86,21 @@ body::-webkit-scrollbar {
 }
 
 .navbar .menu.active {
-  display: block; 
+  display: block;
   position: absolute;
-  top: 60px; 
+  top: 60px;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8); 
+  background-color: rgba(0, 0, 0, 0.8);
   width: 70%;
   text-align: center;
   padding: 10px 0;
   justify-content: center;
 }
 
-@media (max-width: 768px) {
-  
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 70%; 
-    backdrop-filter: blur(10px);
-    color: white;
-    z-index: 1000;
-    padding: 10px 0;
-    display: flex;
-    justify-content: right; 
-    padding-right: 10px;
-    align-items: center;
-    font-family: "Saira Condensed", sans-serif;
-  }
-
-  .navbar ul {
-    display: none; 
-  } 
-
-  .navbar .hamburger {
-    display: flex; 
-  }
-
-  .navbar .menu {
-    display: none; 
-    width: 100%;
-    padding-top: 20px;
-    gap: 15px;
-    text-align: center;
-  }
-
-  .navbar .menu.active {
-    display: flex; 
-    width: 100%;
-  }
-
-  .navbar a {
-    font-size: 13px; 
-  }
-}
-
 /* Background Video Styles */
 .homebg {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -177,22 +131,21 @@ body::-webkit-scrollbar {
   z-index: 1;
 }
 
-
 .video-credits {
   position: absolute;
-  bottom: 20px; 
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   font-size: 16px;
   z-index: 10;
-  opacity: 0; 
-  transition: opacity 0.3s ease; 
+  opacity: 0;
+  transition: opacity 0.3s ease;
   text-align: center;
 }
 
 .video-credits a {
-  color: #ffd700; 
+  color: #ffd700;
   text-decoration: none;
 }
 
@@ -225,7 +178,7 @@ body::-webkit-scrollbar {
 .scroll-icon-h1 {
   width: 50px;
   height: 50px;
-  display: block; 
+  display: block;
 }
 
 /* Optional: Animation */
@@ -242,14 +195,14 @@ body::-webkit-scrollbar {
 .img-container {
   width: 100%;
   height: 100vh;
-  background-image: url("bg.png"); 
+  background-image: url("bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-image 1s ease-in-out; 
+  transition: background-image 1s ease-in-out;
 }
 
 .container {
@@ -274,36 +227,50 @@ body::-webkit-scrollbar {
 }
 
 .panel h1 {
-  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 20px;
   margin: 0;
   opacity: 0;
 }
-
 .panel h2 {
-  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
   position: absolute;
-  bottom: 10px;
+  bottom: 20px;
   right: 20px;
   margin: 0;
   opacity: 0;
 }
-
 .panel.active {
   flex: 5;
 }
-
 .panel.active h1 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
-
 .panel.active h2 {
   opacity: 1;
   transition: opacity 0.3s ease-in 0.4s;
 }
+
+.img-quote {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.quote {
+  width: 50%;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #000000;
+  padding: 20px;
+  border-left: 10px solid #00070f;
+}
+
 /* HANGGANG DITO*/
 
 /* ABOUT SECTION */
@@ -357,12 +324,6 @@ body::-webkit-scrollbar {
 }
 
 /* FOOTER */
-.footer {
-  background-image: linear-gradient(to right, #000000 5.68%, #17b16f 94.24%);
-  width: 100%;
-  height: 100vh;
-  margin-bottom: -20px;
-}
 
 .destination_footer {
   background-image: url("/assets/bg.png");
@@ -380,7 +341,7 @@ body::-webkit-scrollbar {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   justify-content: center;
-  align-items: flex-start; 
+  align-items: flex-start;
   width: 85%;
   height: 90%;
   margin: 0 auto;
@@ -412,7 +373,7 @@ body::-webkit-scrollbar {
 }
 
 .icon-link {
-  font-size: 1.5rem; 
+  font-size: 1.5rem;
   text-decoration: none;
   color: white;
   transition: background 0.3s ease;
@@ -424,7 +385,7 @@ body::-webkit-scrollbar {
 }
 
 .icon-item img {
-  width: 350px; 
+  width: 350px;
   height: 450px;
   color: #efefee;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -432,40 +393,66 @@ body::-webkit-scrollbar {
 }
 
 .icon-item img:hover {
-  transform: scale(1.1); 
-  filter: brightness(1.2); 
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
 
-/* HOME MOBILE */
+/* MOBILE VIEW*/
 @media (max-width: 768px) {
-  body {
-    font-size: 14px; 
-    margin: 0;
-    padding: 0;
+  .navbar {
+    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%; 
+    width: 70%;
     backdrop-filter: blur(10px);
     color: white;
     z-index: 1000;
     padding: 10px 0;
     display: flex;
-    justify-content: center; 
+    justify-content: right;
+    padding-right: 10px;
     align-items: center;
-    font-family: "Saira Condensed", sans-serif; width: 100%;
-    background: linear-gradient(
-    173.13deg,
-    #000000 5.68%,
-    #000000 5.69%,
-    #17b16f 94.24%
-  );
+    font-family: "Saira Condensed", sans-serif;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar .hamburger {
+    display: flex;
+  }
+
+  .navbar .menu {
+    display: none;
+    width: 100%;
+    padding-top: 20px;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .navbar .menu.active {
+    display: flex;
+    width: 100%;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  /* HOME SECTION*/
+  html, body {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    color: white;
+    font-family: "Saira Condensed", sans-serif;
+    overflow-x: hidden;
   }
 
   .homebg {
-    display: flex;
-    height: 100%; 
-    width: 100%;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -475,54 +462,43 @@ body::-webkit-scrollbar {
 
   .homebg-video {
     width: 100%;
-    height: 100%; 
-    object-fit: cover; 
+    height: 100%;
+    object-fit: cover;
   }
 
-  /* Content Styles */
-.home-content img{
-  width: 100%;
-  height: auto;
-}
-
-.scroll-down {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 90px;
-  height: auto;
-  text-align: center;
-}
-
-.video-credits {
-  font-size: 14px;
-}
-
-}
-
-/* DISCOVER MOBILE (ANGEL SAYO 2*/
-@media (max-width: 768px) {
-  .panel h1 {
-    font-size: 14px;
-  }
-  .panel h2 {
-    font-size: 14px;
-  }
-}
-
-/* ABOUT MOBILE (PATI I2 ANGEL)*/
-
-@media (max-width: 768px) {
-  .about {
-    position: relative;
+  .home-content img {
     width: 100%;
     height: auto;
-    padding: 20px 10px;
+  }
+
+  .scroll-down {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    width: 90px;
+    height: auto;
     text-align: center;
-    overflow: hidden;
+  }
+
+  .video-credits {
+    font-size: 14px;
+  }
+  /* DISCOVER */
+  .panel h1 {
+    font-size: 12px;
+  }
+
+  .panel h2 {
+    font-size: 12px;
+  }
+
+  .quote {
+    display: none;
+  }
+
+  .about {
+    position: relative;
+    text-align: center;
   }
 
   .about h3 {
@@ -544,7 +520,7 @@ body::-webkit-scrollbar {
   }
 
   .about .phil_img {
-    width: 100%;
+    width: 60%;
     height: auto;
     position: absolute;
     top: 50%;
@@ -553,15 +529,12 @@ body::-webkit-scrollbar {
     z-index: 0;
     opacity: 0.5; 
   }
-}
 
-/* DESTINATION MOBILE */
-@media (max-width: 768px) {
-  .destination_container {
-    width: 90%; 
+  .destination_section {
+    width: 100%; 
     height: auto; 
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0;
+    margin-bottom: 5px;
   }
 
   .destination_container nav {
@@ -578,26 +551,16 @@ body::-webkit-scrollbar {
     font-size: 22px; 
   }
 
-  .footer {
-    height: auto; 
-  }
-}
-
-@media (max-width: 768px) {
-  .icon-item img {
-    width: 60px; 
-    height: 60px;
-  }
-
-  .icon-item p {
-    font-size: 18px; 
-  }
-
   .destination_footer {
-    padding-top: 10px; 
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    background-size: cover;
   }
 
-  .destination_container {
-    width: 95%; 
+  .homebg, .img-container, .footer, .destination_section, .contact_us {
+    width: 100%;
   }
 }

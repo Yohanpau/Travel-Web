@@ -7,7 +7,7 @@ function toggleMenu() {
 const panels = document.querySelectorAll(".panel");
 
 panels.forEach((panel) => {
-    panel.addEventListener("click", () => {
+    panel.addEventListener("mouseover", () => {
         removeActiveClasses();
         panel.classList.add("active"); 
     });
