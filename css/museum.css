@@ -234,7 +234,7 @@ body::-webkit-scrollbar {
   height: 284px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .navbar {
     width: 70%;
     padding: 10px;

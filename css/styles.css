@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow: scroll;
   overflow-x: hidden;
   scroll-behavior: smooth;
   background: linear-gradient(
@@ -98,7 +98,7 @@ body::-webkit-scrollbar {
   justify-content: center;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   
   .navbar {
     position: fixed;
@@ -111,14 +111,15 @@ body::-webkit-scrollbar {
     z-index: 1000;
     padding: 10px 0;
     display: flex;
-    justify-content: center; 
+    justify-content: right; 
+    padding-right: 10px;
     align-items: center;
     font-family: "Saira Condensed", sans-serif;
   }
 
   .navbar ul {
     display: none; 
-  }
+  } 
 
   .navbar .hamburger {
     display: flex; 
@@ -134,11 +135,11 @@ body::-webkit-scrollbar {
 
   .navbar .menu.active {
     display: flex; 
-    width: 280px;
+    width: 100%;
   }
 
   .navbar a {
-    font-size: 14px; 
+    font-size: 13px; 
   }
 }
 
@@ -318,6 +319,7 @@ body::-webkit-scrollbar {
   );
   color: white;
   margin: 0;
+  margin-bottom: 10px;
   padding: 20px 0;
   display: flex;
   flex-direction: column;
@@ -367,6 +369,7 @@ body::-webkit-scrollbar {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  margin-top: 60px;
   margin-bottom: 10px;
   padding-top: 20px;
   text-align: center;
@@ -434,13 +437,11 @@ body::-webkit-scrollbar {
 }
 
 /* HOME MOBILE */
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   body {
     font-size: 14px; 
     margin: 0;
     padding: 0;
-    overflow-x: hidden; 
-    position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -453,6 +454,12 @@ body::-webkit-scrollbar {
     justify-content: center; 
     align-items: center;
     font-family: "Saira Condensed", sans-serif; width: 100%;
+    background: linear-gradient(
+    173.13deg,
+    #000000 5.68%,
+    #000000 5.69%,
+    #17b16f 94.24%
+  );
   }
 
   .homebg {
@@ -494,7 +501,7 @@ body::-webkit-scrollbar {
 }
 
 /* DISCOVER MOBILE (ANGEL SAYO 2*/
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .panel h1 {
     font-size: 14px;
   }
@@ -505,7 +512,7 @@ body::-webkit-scrollbar {
 
 /* ABOUT MOBILE (PATI I2 ANGEL)*/
 
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .about {
     position: relative;
     width: 100%;
@@ -549,7 +556,7 @@ body::-webkit-scrollbar {
 }
 
 /* DESTINATION MOBILE */
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .destination_container {
     width: 90%; 
     height: auto; 
@@ -576,7 +583,7 @@ body::-webkit-scrollbar {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .icon-item img {
     width: 60px; 
     height: 60px;
