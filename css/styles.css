@@ -265,6 +265,7 @@ body::-webkit-scrollbar {
 .quote {
   width: 50%;
   font-size: 1.2rem;
+  font-family: "Shadows Into Light Two";
   font-style: italic;
   color: #000000;
   padding: 20px;

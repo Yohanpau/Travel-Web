@@ -265,6 +265,8 @@ body::-webkit-scrollbar {
   }
 
   .modal {
+    display: none;
+    overflow-x: hidden;
     font-size: 11px;
     width: 100%;
     height: auto;
